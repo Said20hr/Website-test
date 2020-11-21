@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/*****************************************************************************************************
+**** StyleSheet Css summary
+***  1-Navigations
+***  2-Home
+***  3-Service
+***  4-From Call-back
+***  5-Stats
+***  6-Features
+***  7-News
+***  8-Partners
+***  9-buttons
+***  10-titles
+***  11- cards
+***  12-footer
+***  13-mediaqueries
+*/
+/****************************************************************************************************
+**|| 1- Navigations
+*****************************************************************************************************/
+.top-nav
+{
+  font-size: 12px;
+  color: white;
+}
+#navbar-responsive
+{
+  display: none;
+  height: 0;
+}
+#navbar-right
+{
+  display: block;
+  transition: 0.3s;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 25px 20px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  z-index: 99;
+}
+#icon
+{
+  display: none;
+}
+#navbar a {
+  float: left;
+  color: #262626;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: ease 0.5s;
+  font-weight: 700;
+  line-height: 25px;
+  border-radius: 4px;
+}
+#navbar #logo,.logo {
+  font-size: 35px;
+  font-weight: bold;
+}
+#navbar a:hover {
+  color: #16a086;
+}
+#navbar a.active {
+  color: #16a086;
+}
+/****************************************************************************************************
+**|| 2- Home
+*****************************************************************************************************/
+.home {
+  height: 600px;
+  background: url("dist/images/home0.jpg");
+  background-size: 100%;
+}
+.home-cover
+{
+  height: 600px;
+  background-color: rgba(5,25,50,0.8);
+}
+.home_title
+{
+  color: white;
+  font-size: 3.2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.home_title_slogan
+{
+  color: white;
+  font-size: 1.8em;
+  font-family: 'Roboto', sans-serif;
+}
+/****************************************************************************************************
+**|| 3- Service
+*****************************************************************************************************/
+.service
+{
+  -webkit-transform: scale(1.9);
+  transform: scale(0.9);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.service:hover
+{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/****************************************************************************************************
+**|| 4- From Call-back
+*****************************************************************************************************/
+.form_call
+{
+  background: #05233a;
+}
+.form-control
+{
+  height: 50px;
+  width: 100%;
+  border-radius: unset;
+  padding-left: 10px;
+}
+/****************************************************************************************************
+**|| 5- Stats
+*****************************************************************************************************/
+.stats{
+  background-image: url('dist/images/cover005.jpg');
+  background-size: cover;
+  position: relative;
+}
+.stats::before{
+  background-color: #05233a;
+  opacity: 0.85;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.stats_odd
+{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.1;
+}
+.stats_title
+{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.333333;
+  text-transform: uppercase;
+}
+/****************************************************************************************************
+**|| 6- Features
+*****************************************************************************************************/
+.featured img
+{
+  height: 250px;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  background-color: #05233a;
+  opacity: 0.8;
+  overflow: hidden;
+  max-width: 100%;
+  height: 45px;
+  margin: auto;
+  transition: 0.6s ease;
+}
+.featured:hover .overlay {
+  height: 250px;
+}
+.text {
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-70%, -15%);
+}
+/****************************************************************************************************
+**|| 7- News
+*****************************************************************************************************/
+.news img
+{
+  height: 200px;
+}
+/****************************************************************************************************
+**|| 8- Partner
+*****************************************************************************************************/
+.partner img
+{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.partner img:hover
+{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+.email
+{
+  border: 1px #16a086 solid;
+}
+.txt-center
+{
+  font-size: 14px;
+}
+/****************************************************************************************************
+**|| 9- buttons
+*****************************************************************************************************/
+.btn
+{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  width: 150px;
+  padding: 15px 5px;
+  border: unset;
+  font-size: 14px;
+  border-radius: 0;
+  outline-style: unset;
+  -webkit-transition: all 0.2s !important;
+  -o-transition: all 0.2s !important;
+  -moz-transition: all 0.2s !important;
+  transition: all 0.2s !important;
+}
+.btn1
+{
+  background: #16a086;
+}
+.btn1:hover
+{
+  background: #05233a;
+  transition: 0.5s ease;
+}
+.btn2
+{
+  background: #fff;
+  color: #05233a;
+}
+.btn2:hover
+{
+  background: #05233a;
+  color: white;
+  transition: 0.5s ease;
+}
+.btn3
+{
+  background: #16a086;
+  color: white;
+}
+.btn3:hover
+{
+  background: aliceblue;
+  color: #16a086;
+  transition: 0.5s ease;
+}
+.btn4
+{
+  background: aliceblue;
+  color: #130b0b;
+  border-radius: 0;
+  outline-style: unset;
+  -webkit-transition: all 0.2s !important;
+  -o-transition: all 0.2s !important;
+  -moz-transition: all 0.2s !important;
+  transition: all 0.2s !important;
+}
+.btn4:hover
+{
+  background: #16a086;
+  color: white;
+  transition: 0.5s ease;
+}
+.btn5
+{
+  background: #16a086;
+  color: white;
+  border-radius: 0;
+  outline-style: unset;
+  -webkit-transition: all 0.2s !important;
+  -o-transition: all 0.2s !important;
+  -moz-transition: all 0.2s !important;
+  transition: all 0.2s !important;
+}
+.btn5:hover
+{
+  background: #05233a;
+  transition: 0.5s ease;
+}
+/**************************************************************************
+**|| 10-Titles
+***************************************************************************
+ */
+.title
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #333;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.size-a-2
+{
+  background: #333333;
+  margin: auto;
+  height: 3px;
+  width: 10%;
+}
+.size-a-3
+{
+  background: #fff;
+  margin: auto;
+  height: 3px;
+  width: 10%;
+}
+.size-a-1
+{
+  background: aliceblue;
+  height: 3px;
+  width: 25%;
+}
+
+/****************************************************************************************************
+**|| 11- Cards -- Box
+*****************************************************************************************************/
+.card-body
+{
+  background: #05233a;
+  padding: 15px 25px;
+}
+.choose_displayed i
+{
+  padding-top: 10px;
+  font-size: 5em;
+  color: #16a086;
+  transition: 0.4s;
+}
+.choose-title
+ {
+   font-size: 16px;
+   color: #666666;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   transition: 0.4s;
+   margin: 25px 5px;
+ }
+.card_choose
+{
+  background: lemonchiffon;
+  border: 1px rgba(170, 165, 165, 0.6) solid ;
+  height: 300px;
+}
+.choose_displayed
+{
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+}
+.choose_hidden
+{
+  display: none;
+  transition: 0.1s;
+}
+.card_choose:hover > .choose_displayed i
+{
+  padding-top:5px;
+  font-size:3.5em;
+  color: #f1f1f1;
+}
+.card_choose:hover .choose-title
+{
+  padding: 0;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 0 0 ;
+}
+.card_choose:hover .choose_hidden
+{
+  display: block;
+  padding: 0 25px ;
+  margin-top: 0;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.card_choose:hover
+{
+  background-color: #16a086 !important;
+}
+.card-title a
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.card-title a:hover
+{
+  color: #16a086;
+  transition: 0.5s ease;
+}
+.card-text
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: aliceblue;
+}
+.card-title
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: aliceblue;
+  font-weight: 700;
+}
+.card-title1 a
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #262626;
+  font-weight: bold;
+}
+.card-title1 a:hover
+{
+  color: #16a086;
+  transition: 0.5s ease;
+}
+/****************************************************************************************************
+**|| 12- footer
+*****************************************************************************************************/
+footer {
+
+  background: url("dist/images/footer.jpg");
+  background-size: cover;
+}
+.footer
+{
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  height: 100%;
+  background-color: rgba(5,25,50,0.9);
+  color: lavender;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+.borad-50per
+{
+  background: #16a086;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  padding: 7px 6px 7px 8px;
+  margin: 0;
+  text-align: center;
+}
+.borad
+{
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  text-align: center;
+  transition: ease 0.5s;
+}
+.borad-50per:hover
+{
+background: white;
+  color: #16a086;
+}
+.borad:hover
+{
+  color: #16a086;
+}
+footer p {
+  margin-bottom: .25rem;
+}
+.t1-m-3
+{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+.kit-list1
+{
+  list-style: square;
+  padding-right: 15px;
+}
+.bg-10
+{
+background-color: #05233a;
+}
+/****************************************************************************************************
+**|| 13- Media queries
+*****************************************************************************************************/
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+.jumbotron h1 {
+  font-weight: 300;
+}
+.jumbotron .container {
+  max-width: 40rem;
+}
+@media screen and (max-width: 980px) {
+  #navbar {
+    padding: 5px 10px !important;
+    top: 0!important;
+  }
+  .top-nav
+  {
+    display: none;
+  }
+  .navbar-nav
+  {
+    background-color: #16a086;
+    overflow: auto;
+  }
+  .nav-link
+  {
+    color: white !important;
+    transition: 0.5s ease !important;
+    font-size: 14px !important;
+    padding-left: 20px !important;
+  }
+  .navbar-toggler
+  {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #130b0b;
+
+  }
+  .nav-link:hover
+  {
+    color: #05233a !important;
+  }
+}
+
+/*************************************** the End ***********************************/
